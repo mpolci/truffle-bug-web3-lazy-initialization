@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+  <title>MetaCoin - Default Truffle App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="./app.js"></script>
+
+</head>
+<body ng-controller="TestController as test">
+
+  <h1>inside controller initialization</h1>
+  <p>window.web3 variable initialized: {{ test.web3initialized }}</p>
+  <p>currenteProvider initialized: {{ test.currenteProviderInitialized }}</p>
+
+  <h1>during rendering</h1>
+  <p>window.web3 variable initialized: {{ window.web3 !== null }}</p>
+  <p>currenteProvider initialized: {{ window.web3.currenteProvider !== null }}</p>
+
+
+
+</body>
+</html>
